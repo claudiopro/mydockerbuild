@@ -3,12 +3,12 @@
 Repo for the exercise of the [getting started with Docker](https://docs.docker.com/mac/started) tutorial.
 
 ```
- ________________________________________ 
+ ________________________________________
 / "Once they go up, who cares where they \
 | come down? That's not my department."  |
 |                                        |
 \ -- Werner von Braun                    /
- ---------------------------------------- 
+ ----------------------------------------
     \
      \
       \     
@@ -22,15 +22,17 @@ Repo for the exercise of the [getting started with Docker](https://docs.docker.c
           \____\______/   
 ```
 
-This repo contains a Dockerfile which performs the following steps:
+This repo contains a `Dockerfile` which performs the following steps:
 
 * Downloads the [whalesay image](https://hub.docker.com/r/docker/whalesay/), a variation of the popular [cowsay](https://github.com/schacon/cowsay) Linux program
 * Installs the `fortune` program via `apt-get` (this image is based on Ubuntu)
 * Feeds the output of `fortune` to `cowsay`, showing the random quote in the balloon uttered (???) by the whale           
 
-The repo provides scripts to build and run the image
+# Usage
 
-# Build
+The repo provides scripts to build and run the image.
+
+## Build
 
 Execute the following command:
 
@@ -38,7 +40,7 @@ Execute the following command:
 ./build.sh
 ```
 
-# Run
+## Run
 
 Execute the following command:
 
@@ -49,4 +51,3 @@ Execute the following command:
 # License
 
 MIT
-
